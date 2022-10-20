@@ -32,7 +32,7 @@ public class Printer {
                 BufferedWriter print = new BufferedWriter(new FileWriter(fileName, true));
                 Customer inputCustomer = allCustomers.get(customerIndex);
                 print.write("Date of session: " + LocalDate.now() + ". Name: " + inputCustomer.getName()
-                        + ". Id: " + inputCustomer.getId());
+                        + ". Id: " + inputCustomer.getId() + "\n");
                 print.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
